@@ -51,6 +51,8 @@ class FavoritePokemons extends React.Component {
 }
 
 FavoritePokemons.propTypes = {
+
+  
   pokemons: PropTypes.arrayOf(pokemonType.isRequired),
 };
 

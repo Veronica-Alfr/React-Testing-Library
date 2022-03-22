@@ -2,7 +2,7 @@ import React from 'react';
 import userEvent from '@testing-library/user-event';
 import { screen } from '@testing-library/react';
 import App from '../App';
-import renderWithRouter from '../renderWithRouter';
+import renderWithRouter from './renderWithRouter';
 
 describe('Testes sobre as páginas e Api de Pókemons', () => {
   test('Testa os links do componente App.js', () => {
