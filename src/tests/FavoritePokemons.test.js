@@ -11,6 +11,5 @@ describe('Testes do componente About', () => {
   });
   test('Testa se há pokemons na tela', () => {
     renderWithRouter(<FavoritePokemons pokemons={ pokemons } />);
-    
   });
 });
