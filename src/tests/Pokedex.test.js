@@ -50,4 +50,38 @@ describe('Testes do componente Pokedex.js', () => {
     />);
     expect(justPikachu).toHaveLength(1);
   });
+  test('Testa se a Pokédex tem os botões de filtro.', () => {
+    const isFavorite = {
+      25: true,
+      4: false,
+    };
+
+    renderWithRouter(<Pokedex pokemons={ data } isPokemonFavoriteById={ isFavorite } />);
+    const nameButton = data[0].type;
+    const buttonPoke = screen.getByRole('button', { name: nameButton });
+    expect(buttonPoke).toBeInTheDocument();
+
+    userEvent.click(buttonPoke);
+
+    const pokeByType = data[0];
+    expect(pokeByType.type).toContain('Electric');
+  });
+  test('Testa o botão All.', () => {
+    const pokes = pokemons;
+    const isFavorite = pokemons.reduce((acc, curr) => {
+      acc[curr.id] = true;
+      return acc;
+    }, {});
+
+    renderWithRouter(<Pokedex pokemons={ pokes } isPokemonFavoriteById={ isFavorite } />);
+
+    const buttonAll = screen.getByRole('button', { name: 'All' });
+    expect(buttonAll).toBeVisible();
+
+    expect(buttonAll).not.toBeDisabled();
+
+    userEvent.click(buttonAll);
+    expect(pokes).toBeVisible();
+    // usar push para a home? ou o not disabled no inicio e final?
+  });
 });

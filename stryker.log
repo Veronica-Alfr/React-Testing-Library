@@ -1,0 +1,262 @@
+20:20:05 (23019) INFO ConfigReader Using stryker.conf.json
+20:20:05 (23019) DEBUG BroadcastReporter Broadcasting to reporters ["progress","clear-text","html"]
+20:20:05 (23019) DEBUG ConfigReader Loading config /home/veronica/sd-019-a-project-react-testing-library/stryker.conf.json
+20:20:05 (23019) DEBUG ConfigReader Loaded config: {
+  "$schema": "./node_modules/@stryker-mutator/core/schema/stryker-schema.json",
+  "mutate": [
+    "src/components/About.js",
+    "src/App.js",
+    "src/components/FavoritePokemons.js",
+    "src/components/NotFound.js",
+    "src/components/Pokedex.js",
+    "src/components/Pokemon.js",
+    "src/components/PokemonDetails.js"
+  ],
+  "mutator": {
+    "name": "javascript",
+    "excludedMutations": [
+      "ArithmeticOperator",
+      "ArrayDeclaration",
+      "ArrowFunction",
+      "BlockStatement",
+      "BooleanLiteral",
+      "ConditionalExpression",
+      "EqualityOperator",
+      "LogicalOperator",
+      "ObjectLiteral",
+      "UnaryOperator",
+      "UpdateOperator"
+    ]
+  },
+  "testRunner": "jest",
+  "reporters": [
+    "progress",
+    "clear-text",
+    "html"
+  ],
+  "coverageAnalysis": "off",
+  "jest": {
+    "projectType": "create-react-app"
+  },
+  "allowConsoleColors": true,
+  "commandRunner": {
+    "command": "npm test"
+  },
+  "clearTextReporter": {
+    "allowColor": true,
+    "logTests": true,
+    "maxTestsToLog": 3
+  },
+  "dashboard": {
+    "baseUrl": "https://dashboard.stryker-mutator.io/api/reports",
+    "reportType": "full"
+  },
+  "eventReporter": {
+    "baseDir": "reports/mutation/events"
+  },
+  "fileLogLevel": "trace",
+  "logLevel": "debug",
+  "maxConcurrentTestRunners": 9007199254740991,
+  "plugins": [
+    "@stryker-mutator/*"
+  ],
+  "symlinkNodeModules": true,
+  "tempDirName": ".stryker-tmp",
+  "thresholds": {
+    "high": 80,
+    "low": 60,
+    "break": null
+  },
+  "timeoutFactor": 1.5,
+  "timeoutMS": 5000,
+  "transpilers": [],
+  "warnings": true,
+  "configFile": "/home/veronica/sd-019-a-project-react-testing-library/stryker.conf.json"
+}
+20:20:05 (23019) DEBUG PluginLoader Loading @stryker-mutator/* from /home/veronica/sd-019-a-project-react-testing-library/node_modules/@stryker-mutator
+20:20:05 (23019) DEBUG PluginLoader Loading plugin "/home/veronica/sd-019-a-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+20:20:05 (23019) DEBUG PluginLoader Loading plugin "/home/veronica/sd-019-a-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+20:20:05 (23019) DEBUG PluginLoader Loading plugins /home/veronica/sd-019-a-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+20:20:05 (23019) DEBUG PluginLoader Loading plugins /home/veronica/sd-019-a-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+20:20:05 (23019) DEBUG PluginLoader Loading plugins /home/veronica/sd-019-a-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+20:20:05 (23019) DEBUG buildSchemaWithPluginContributions Contributing 1 schemas from plugins to options validation.
+20:20:06 (23019) INFO InputFileResolver Found 7 of 67 file(s) to be mutated.
+20:20:06 (23019) DEBUG InputFileResolver All input files: [
+  "/home/veronica/sd-019-a-project-react-testing-library/stryker.log",
+  "/home/veronica/sd-019-a-project-react-testing-library/.babelrc.json",
+  "/home/veronica/sd-019-a-project-react-testing-library/.eslintignore",
+  "/home/veronica/sd-019-a-project-react-testing-library/.eslintrc.json",
+  "/home/veronica/sd-019-a-project-react-testing-library/.github/CODEOWNERS",
+  "/home/veronica/sd-019-a-project-react-testing-library/.github/workflows/main.yml",
+  "/home/veronica/sd-019-a-project-react-testing-library/.gitignore",
+  "/home/veronica/sd-019-a-project-react-testing-library/.npmrc",
+  "/home/veronica/sd-019-a-project-react-testing-library/.stylelintignore",
+  "/home/veronica/sd-019-a-project-react-testing-library/.stylelintrc.json",
+  "/home/veronica/sd-019-a-project-react-testing-library/.trybe/requirements.json",
+  "/home/veronica/sd-019-a-project-react-testing-library/README.md",
+  "/home/veronica/sd-019-a-project-react-testing-library/package-lock.json",
+  "/home/veronica/sd-019-a-project-react-testing-library/package.json",
+  "/home/veronica/sd-019-a-project-react-testing-library/public/favicon.ico",
+  "/home/veronica/sd-019-a-project-react-testing-library/public/index.html",
+  "/home/veronica/sd-019-a-project-react-testing-library/public/logo192.png",
+  "/home/veronica/sd-019-a-project-react-testing-library/public/logo512.png",
+  "/home/veronica/sd-019-a-project-react-testing-library/public/manifest.json",
+  "/home/veronica/sd-019-a-project-react-testing-library/public/robots.txt",
+  "/home/veronica/sd-019-a-project-react-testing-library/public/star-icon.svg",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/App.css",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/App.js",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/components/About.js",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/components/Button.js",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/components/FavoritePokemons.js",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/components/NotFound.js",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/components/Pokedex.js",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/components/Pokemon.js",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/components/PokemonDetails.js",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/components/about.css",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/components/button.css",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/components/favorite-pokemons.css",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/components/index.js",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/components/not-found.css",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/components/pokedex.css",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/components/pokemon-details.css",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/components/pokemon.css",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/data.js",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/index.css",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/index.js",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/logo.svg",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/serviceWorker.js",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/services/pokedexService.js",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/setupTests.js",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/tests/About.test.js",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/tests/App.test.js",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/tests/FavoritePokemons.test.js",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/tests/NotFound.test.js",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/tests/Pokedex.test.js",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/tests/Pokemon.test.js",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/tests/PokemonDetails.test.js",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/tests/mockData.js",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/tests/mockPikachu.js",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/tests/renderWithRouter.js",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/types/index.js",
+  "/home/veronica/sd-019-a-project-react-testing-library/stryker.conf.json",
+  "/home/veronica/sd-019-a-project-react-testing-library/stryker/About.conf.json",
+  "/home/veronica/sd-019-a-project-react-testing-library/stryker/App.conf.json",
+  "/home/veronica/sd-019-a-project-react-testing-library/stryker/FavoritePokemons.conf.json",
+  "/home/veronica/sd-019-a-project-react-testing-library/stryker/NotFound.conf.json",
+  "/home/veronica/sd-019-a-project-react-testing-library/stryker/Pokedex.conf.json",
+  "/home/veronica/sd-019-a-project-react-testing-library/stryker/Pokemon.conf.json",
+  "/home/veronica/sd-019-a-project-react-testing-library/stryker/PokemonDetails.conf.json",
+  "/home/veronica/sd-019-a-project-react-testing-library/testefalhando.png",
+  "/home/veronica/sd-019-a-project-react-testing-library/testepassando.png",
+  "/home/veronica/sd-019-a-project-react-testing-library/trybe.yml"
+]
+20:20:06 (23019) DEBUG InputFileResolver Files to mutate: [
+  "/home/veronica/sd-019-a-project-react-testing-library/src/App.js",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/components/About.js",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/components/FavoritePokemons.js",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/components/NotFound.js",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/components/Pokedex.js",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/components/Pokemon.js",
+  "/home/veronica/sd-019-a-project-react-testing-library/src/components/PokemonDetails.js"
+]
+20:20:06 (23019) DEBUG TemporaryDirectory Using temp directory "/home/veronica/sd-019-a-project-react-testing-library/.stryker-tmp"
+20:20:06 (23019) DEBUG TestFrameworkOrchestrator The `coverageAnalysis` setting is "off", not hooking into the test framework to achieve performance benefits.
+20:20:06 (23019) INFO InitialTestExecutor Starting initial test run. This may take a while.
+20:20:06 (23019) DEBUG Sandbox Creating a sandbox for files in /home/veronica/sd-019-a-project-react-testing-library/.stryker-tmp/sandbox3989005
+20:20:06 (23019) DEBUG Sandbox Creating test runner 0
+20:20:06 (23019) DEBUG ChildProcessProxy Starting /home/veronica/sd-019-a-project-react-testing-library/node_modules/@stryker-mutator/core/src/test-runner/ChildProcessTestRunnerWorker.js in child process 23045
+20:20:08 (23019) DEBUG TimeoutDecorator Starting timeout timer (300000 ms) for a test run
+20:20:06 (23045) DEBUG ChildProcessProxyWorker Changing current working directory for this process to /home/veronica/sd-019-a-project-react-testing-library/.stryker-tmp/sandbox3989005
+20:20:06 (23045) DEBUG PluginLoader Loading @stryker-mutator/* from /home/veronica/sd-019-a-project-react-testing-library/node_modules/@stryker-mutator
+20:20:06 (23045) DEBUG PluginLoader Loading plugin "/home/veronica/sd-019-a-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator" (matched with expression @stryker-mutator/*)
+20:20:06 (23045) DEBUG PluginLoader Loading plugin "/home/veronica/sd-019-a-project-react-testing-library/node_modules/@stryker-mutator/jest-runner" (matched with expression @stryker-mutator/*)
+20:20:06 (23045) DEBUG PluginLoader Loading plugins /home/veronica/sd-019-a-project-react-testing-library/node_modules/@stryker-mutator/javascript-mutator
+20:20:07 (23045) DEBUG PluginLoader Loading plugins /home/veronica/sd-019-a-project-react-testing-library/node_modules/@stryker-mutator/jest-runner
+20:20:08 (23045) DEBUG PluginLoader Loading plugins /home/veronica/sd-019-a-project-react-testing-library/node_modules/@stryker-mutator/core/src/reporters/index.js
+20:20:08 (23045) TRACE JestTestRunner Merging file-based config {
+  "roots": [
+    "<rootDir>/src"
+  ],
+  "collectCoverageFrom": [
+    "**/*.{js,jsx}",
+    "!src/index.js",
+    "!src/serviceWorker.js"
+  ],
+  "setupFiles": [
+    "/home/veronica/sd-019-a-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"
+  ],
+  "setupFilesAfterEnv": [
+    "<rootDir>/src/setupTests.js"
+  ],
+  "testMatch": [
+    "<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}",
+    "<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"
+  ],
+  "testEnvironment": "jsdom",
+  "transform": {
+    "^.+\\.(js|jsx|mjs|cjs|ts|tsx)$": "/home/veronica/sd-019-a-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js",
+    "^.+\\.css$": "/home/veronica/sd-019-a-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js",
+    "^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)": "/home/veronica/sd-019-a-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"
+  },
+  "transformIgnorePatterns": [
+    "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$",
+    "^.+\\.module\\.(css|sass|scss)$"
+  ],
+  "modulePaths": [],
+  "moduleNameMapper": {
+    "^react-native$": "react-native-web",
+    "^.+\\.module\\.(css|sass|scss)$": "identity-obj-proxy"
+  },
+  "moduleFileExtensions": [
+    "web.js",
+    "js",
+    "web.ts",
+    "ts",
+    "web.tsx",
+    "tsx",
+    "json",
+    "web.jsx",
+    "jsx",
+    "node"
+  ],
+  "watchPlugins": [
+    "jest-watch-typeahead/filename",
+    "jest-watch-typeahead/testname"
+  ],
+  "resetMocks": true,
+  "rootDir": "/home/veronica/sd-019-a-project-react-testing-library/.stryker-tmp/sandbox3989005"
+} 
+      with custom config {}
+      and default (internal) stryker config [object Object]
+20:20:08 (23045) DEBUG JestTestRunner Running jest with --findRelatedTests flag. Set jest.enableFindRelatedTests to false to run all tests on every mutant.
+20:20:08 (23045) DEBUG JestTestRunner Project root is /home/veronica/sd-019-a-project-react-testing-library/.stryker-tmp/sandbox3989005
+20:20:08 (23045) TRACE JestGreaterThan25Adapter Invoking Jest with config {"roots":["<rootDir>/src"],"collectCoverageFrom":["**/*.{js,jsx}","!src/index.js","!src/serviceWorker.js"],"setupFiles":["/home/veronica/sd-019-a-project-react-testing-library/node_modules/react-app-polyfill/jsdom.js"],"setupFilesAfterEnv":["<rootDir>/src/setupTests.js"],"testMatch":["<rootDir>/src/**/__tests__/**/*.{js,jsx,ts,tsx}","<rootDir>/src/**/*.{spec,test}.{js,jsx,ts,tsx}"],"testEnvironment":"jsdom","transform":{"^.+\\.(js|jsx|mjs|cjs|ts|tsx)$":"/home/veronica/sd-019-a-project-react-testing-library/node_modules/react-scripts/config/jest/babelTransform.js","^.+\\.css$":"/home/veronica/sd-019-a-project-react-testing-library/node_modules/react-scripts/config/jest/cssTransform.js","^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)":"/home/veronica/sd-019-a-project-react-testing-library/node_modules/react-scripts/config/jest/fileTransform.js"},"transformIgnorePatterns":["[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$","^.+\\.module\\.(css|sass|scss)$"],"modulePaths":[],"moduleNameMapper":{"^react-native$":"react-native-web","^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"},"moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],"watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],"resetMocks":true,"rootDir":"/home/veronica/sd-019-a-project-react-testing-library/.stryker-tmp/sandbox3989005","collectCoverage":false,"verbose":false,"bail":false,"notify":false,"reporters":[]}
+20:20:30 (23019) DEBUG ChildProcessProxy Disposing of worker process 23045
+20:20:30 (23019) DEBUG ChildProcessProxy Kill 23045
+20:20:30 (23019) ERROR InitialTestExecutor One or more tests failed in the initial test run:
+	Testes do componente Pokedex.js Testa o botão All.
+		Error: expect(received).toBeVisible()
+
+received value must be an HTMLElement or an SVGElement.
+Received has type:  array
+Received has value: [{"averageWeight": {"measurementUnit": "kg", "value": "6.0"}, "foundAt": [{"location": "Kanto Viridian Forest", "map": "https://cdn2.bulbagarden.net/upload/0/08/Kanto_Route_2_Map.png"}, {"location": "Kanto Power Plant", "map": "https://cdn2.bulbagarden.net/upload/b/bd/Kanto_Celadon_City_Map.png"}], "id": 25, "image": "https://cdn2.bulbagarden.net/upload/b/b2/Spr_5b_025_m.png", "moreInfo": "https://bulbapedia.bulbagarden.net/wiki/Pikachu_(Pok%C3%A9mon)", "name": "Pikachu", "summary": "This intelligent Pokémon roasts hard berries with electricity to make them tender enough to eat.", "type": "Electric"}, {"averageWeight": {"measurementUnit": "kg", "value": "8.5"}, "foundAt": [{"location": "Alola Route 3", "map": "https://cdn2.bulbagarden.net/upload/9/93/Alola_Route_3_Map.png"}, {"location": "Kanto Route 3", "map": "https://cdn2.bulbagarden.net/upload/4/4a/Kanto_Route_3_Map.png"}, {"location": "Kanto Route 4", "map": "https://cdn2.bulbagarden.net/upload/2/24/Kanto_Route_4_Map.png"}, {"location": "Kanto Rock Tunnel", "map": "https://cdn2.bulbagarden.net/upload/6/6f/Kanto_Rock_Tunnel_Map.png"}], "id": 4, "image": "https://cdn2.bulbagarden.net/upload/0/0a/Spr_5b_004.png", "moreInfo": "https://bulbapedia.bulbagarden.net/wiki/Charmander_(Pok%C3%A9mon)", "name": "Charmander", "summary": "The flame on its tail shows the strength of its life force. If it is weak, the flame also burns weakly.", "type": "Fire"}, {"averageWeight": {"measurementUnit": "kg", "value": "2.9"}, "foundAt": [{"location": "Johto Route 30", "map": "https://cdn2.bulbagarden.net/upload/7/76/Johto_Route_30_Map.png"}, {"location": "Johto Route 31", "map": "https://cdn2.bulbagarden.net/upload/2/2b/Johto_Route_31_Map.png"}, {"location": "Ilex Forest", "map": "https://cdn2.bulbagarden.net/upload/a/ae/Johto_Ilex_Forest_Map.png"}, {"location": "Johto National Park", "map": "https://cdn2.bulbagarden.net/upload/4/4e/Johto_National_Park_Map.png"}], "id": 10, "image": "https://cdn2.bulbagarden.net/upload/8/83/Spr_5b_010.png", "moreInfo": "https://bulbapedia.bulbagarden.net/wiki/Caterpie_(Pok%C3%A9mon)", "name": "Caterpie", "summary": "For protection, it releases a horrible stench from the antennae on its head to drive away enemies.", "type": "Bug"}, {"averageWeight": {"measurementUnit": "kg", "value": "6.9"}, "foundAt": [{"location": "Goldenrod Game Corner", "map": "https://cdn2.bulbagarden.net/upload/e/ec/Johto_Goldenrod_City_Map.png"}], "id": 23, "image": "https://cdn2.bulbagarden.net/upload/1/18/Spr_5b_023.png", "moreInfo": "https://bulbapedia.bulbagarden.net/wiki/Ekans_(Pok%C3%A9mon)", "name": "Ekans", "summary": "It can freely detach its jaw to swallow large prey whole. It can become too heavy to move, however.", "type": "Poison"}, {"averageWeight": {"measurementUnit": "kg", "value": "48.0"}, "foundAt": [{"location": "Unova Accumula Town", "map": "https://cdn2.bulbagarden.net/upload/4/44/Unova_Accumula_Town_Map.png"}], "id": 65, "image": "https://cdn2.bulbagarden.net/upload/8/88/Spr_5b_065_m.png", "moreInfo": "https://bulbapedia.bulbagarden.net/wiki/Alakazam_(Pok%C3%A9mon)", "name": "Alakazam", "summary": "Closing both its eyes heightens all its other senses. This enables it to use its abilities to their extremes.", "type": "Psychic"}, {"averageWeight": {"measurementUnit": "kg", "value": "4.0"}, "foundAt": [{"location": "Faraway Island", "map": "https://cdn2.bulbagarden.net/upload/e/e4/Hoenn_Faraway_Island_Map.png"}], "id": 151, "image": "https://cdn2.bulbagarden.net/upload/4/43/Spr_5b_151.png", "moreInfo": "https://bulbapedia.bulbagarden.net/wiki/Mew_(Pok%C3%A9mon)", "name": "Mew", "summary": "Apparently, it appears only to those people who are pure of heart and have a strong desire to see it.", "type": "Psychic"}, {"averageWeight": {"measurementUnit": "kg", "value": "95.0"}, "foundAt": [{"location": "Kanto Route 28", "map": "https://cdn2.bulbagarden.net/upload/5/5b/Kanto_Route_28_Map.png"}, {"location": "Johto Mount Silver", "map": "https://cdn2.bulbagarden.net/upload/9/95/Johto_Mt_Silver_Map.png"}], "id": 78, "image": "https://cdn2.bulbagarden.net/upload/5/58/Spr_5b_078.png", "moreInfo": "https://bulbapedia.bulbagarden.net/wiki/Rapidash_(Pok%C3%A9mon)", "name": "Rapidash", "summary": "At full gallop, its four hooves barely touch the ground because it moves so incredibly fast.", "type": "Fire"}, {"averageWeight": {"measurementUnit": "kg", "value": "460.0"}, "foundAt": [{"location": "Kanto Vermillion City", "map": "https://cdn2.bulbagarden.net/upload/5/54/Kanto_Vermilion_City_Map.png"}], "id": 143, "image": "https://cdn2.bulbagarden.net/upload/4/40/Spr_5b_143.png", "moreInfo": "https://bulbapedia.bulbagarden.net/wiki/Snorlax_(Pok%C3%A9mon)", "name": "Snorlax", "summary": "What sounds like its cry may actually be its snores or the rumblings of its hungry belly.", "type": "Normal"}, {"averageWeight": {"measurementUnit": "kg", "value": "16.5"}, "foundAt": [{"location": "Johto Route 45", "map": "https://cdn2.bulbagarden.net/upload/2/21/Johto_Route_45_Map.png"}, {"location": "Johto Dragon's Den", "map": "https://cdn2.bulbagarden.net/upload/1/1e/Johto_Dragons_Den_Map.png"}], "id": 148, "image": "https://cdn2.bulbagarden.net/upload/2/2c/Spr_5b_148.png", "moreInfo": "https://bulbapedia.bulbagarden.net/wiki/Dragonair_(Pok%C3%A9mon)", "name": "Dragonair", "summary": "They say that if it emits an aura from its whole body, the weather will begin to change instantly.", "type": "Dragon"}]
+    at __EXTERNAL_MATCHER_TRAP__ (/home/veronica/sd-019-a-project-react-testing-library/node_modules/expect/build/index.js:386:30)
+    at Object.toBeVisible (/home/veronica/sd-019-a-project-react-testing-library/node_modules/expect/build/index.js:387:15)
+    at Object.<anonymous> (/home/veronica/sd-019-a-project-react-testing-library/.stryker-tmp/sandbox3989005/src/tests/Pokedex.test.js:84:19)
+    at Promise.then.completed (/home/veronica/sd-019-a-project-react-testing-library/node_modules/jest-circus/build/utils.js:391:28)
+    at new Promise (<anonymous>)
+    at callAsyncCircusFn (/home/veronica/sd-019-a-project-react-testing-library/node_modules/jest-circus/build/utils.js:316:10)
+    at _callCircusTest (/home/veronica/sd-019-a-project-react-testing-library/node_modules/jest-circus/build/run.js:218:40)
+    at _runTest (/home/veronica/sd-019-a-project-react-testing-library/node_modules/jest-circus/build/run.js:155:3)
+    at _runTestsForDescribeBlock (/home/veronica/sd-019-a-project-react-testing-library/node_modules/jest-circus/build/run.js:66:9)
+    at _runTestsForDescribeBlock (/home/veronica/sd-019-a-project-react-testing-library/node_modules/jest-circus/build/run.js:60:9)
+    at run (/home/veronica/sd-019-a-project-react-testing-library/node_modules/jest-circus/build/run.js:25:3)
+    at runAndTransformResultsToJestFormat (/home/veronica/sd-019-a-project-react-testing-library/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapterInit.js:170:21)
+    at jestAdapter (/home/veronica/sd-019-a-project-react-testing-library/node_modules/jest-circus/build/legacy-code-todo-rewrite/jestAdapter.js:82:19)
+    at runTestInternal (/home/veronica/sd-019-a-project-react-testing-library/node_modules/jest-runner/build/runTest.js:389:16)
+    at runTest (/home/veronica/sd-019-a-project-react-testing-library/node_modules/jest-runner/build/runTest.js:475:34)
+20:20:30 (23019) ERROR StrykerCli an error occurred Error: There were failed tests in the initial test run.
+    at InitialTestExecutor.validateResult (/home/veronica/sd-019-a-project-react-testing-library/node_modules/@stryker-mutator/core/src/process/InitialTestExecutor.js:69:27)
+    at InitialTestExecutor.run (/home/veronica/sd-019-a-project-react-testing-library/node_modules/@stryker-mutator/core/src/process/InitialTestExecutor.js:41:14)
+    at processTicksAndRejections (node:internal/process/task_queues:96:5)
+    at async Stryker.runMutationTest (/home/veronica/sd-019-a-project-react-testing-library/node_modules/@stryker-mutator/core/src/Stryker.js:53:38)
