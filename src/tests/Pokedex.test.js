@@ -3,7 +3,6 @@ import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { Pokedex } from '../components';
 import renderWithRouter from './renderWithRouter';
-import pokemons from '../data';
 
 const data = require('./mockData');
 const justPikachu = require('./mockPikachu');
