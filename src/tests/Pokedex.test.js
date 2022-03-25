@@ -66,7 +66,13 @@ describe('Testes do componente Pokedex.js', () => {
       userEvent.click(buttonType);
       const dataIdType = screen.getByTestId('pokemon-type');
       expect(dataIdType).toHaveTextContent(nameType);
+
+      // const buttonAll = screen.getByRole('button', { name: 'All' });
+      // expect(buttonAll).toBeInTheDocument();
     });
+    const buttons = screen.getAllByTestId('pokemon-type-button');
+    const lengthButton = 7;
+    expect(buttons).toHaveLength(lengthButton);
   });
   test('Testa o botão All.', () => {
     const pokes = pokemons;
@@ -79,8 +85,6 @@ describe('Testes do componente Pokedex.js', () => {
 
     const buttonAll = screen.getByRole('button', { name: 'All' });
     expect(buttonAll).toBeInTheDocument();
-
-    // tá num poke, aperta all e o 1° poke é pikachu.
 
     const buttonDragon = screen.getByRole('button', { name: 'Dragon' });
     expect(buttonDragon).toBeInTheDocument();
