@@ -3,6 +3,7 @@ import { screen } from '@testing-library/react';
 import userEvent from '@testing-library/user-event';
 import { Pokedex } from '../components';
 import renderWithRouter from './renderWithRouter';
+import pokemons from '../data';
 
 const data = require('./mockData');
 const justPikachu = require('./mockPikachu');
@@ -65,9 +66,6 @@ describe('Testes do componente Pokedex.js', () => {
       userEvent.click(buttonType);
       const dataIdType = screen.getByTestId('pokemon-type');
       expect(dataIdType).toHaveTextContent(nameType);
-
-      // const buttonAll = screen.getByRole('button', { name: 'All' });
-      // expect(buttonAll).toBeInTheDocument();
     });
     const buttons = screen.getAllByTestId('pokemon-type-button');
     const lengthButton = 7;
