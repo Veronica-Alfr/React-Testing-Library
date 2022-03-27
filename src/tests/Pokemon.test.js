@@ -15,7 +15,6 @@ describe('Testes do componente Pokemon.js', () => {
       isFavorite
     />);
     const dataIdName = screen.getByTestId('pokemon-name');
-    console.log(dataIdName);
     expect(dataIdName).toHaveTextContent('Pikachu');
 
     const dataIdType = screen.getByTestId('pokemon-type');
@@ -29,7 +28,8 @@ describe('Testes do componente Pokemon.js', () => {
     expect(image).toHaveAttribute('src', 'https://cdn2.bulbagarden.net/upload/b/b2/Spr_5b_025_m.png');
   });
   test('se há um link de navegação para exibir detalhes deste Pokémon', () => {
-    renderWithRouter(<App />);
+    renderWithRouter(<App />); // Ajuda de Danillo Gonçalves para entender que era melhor
+    // utilizar o componente App do que o componente Pokemon para os testes a seguir:
     const pokemonLink = screen.getByRole('link', { name: 'More details' });
     expect(pokemonLink).toBeInTheDocument();
     expect(pokemonLink).toHaveAttribute('href', '/pokemons/25');
